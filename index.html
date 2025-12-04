@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>João Martins Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+    <div class="left">João Martins<br>
+        <small>joaogasparlopesmartins@gmail.com | +351 969384697</small>
+    </div>
+
+    <div class="right">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommend">Recommendations</a>
+    </div>
+</nav>
+
+<div class="hero" id="about">
+    <img src="https://avatar.iran.liara.run/public/27" alt="avatar" />
+
+    <div>
+        <h1>Hi, I'm João Martins! 👋</h1>
+        <p>
+            I am a full stack developer with 5 years of experience in both application 
+            and presentation layers. I have worked on applications and microservices 
+            deployed on IBM Cloud.
+        </p>
+    </div>
+</div>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-box">
+            <p><i class="fa-brands fa-html5" aria-hidden="true"></i><b>HTML</b></p>
+            <p>5 years experience</p>
+        </div>
+
+        <div class="skill-box">
+            <p><i class="fa-brands fa-js" aria-hidden="true"></i><b>JavaScript</b></p>
+            <p>4 years experience</p>
+        </div>
+
+        <div class="skill-box">
+            <p><i class="fa-brands fa-java" aria-hidden="true"></i><b>Java</b></p>
+            <p>3 years experience</p>
+        </div>
+
+        <div class="skill-box">
+            <p><i class="fa-brands fa-react" aria-hidden="true"></i><b>React</b></p>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill-box">
+            <p><i class="fa-brands fa-node" aria-hidden="true"></i><b>Node.js</b></p>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill-box">
+            <p><i class="fa-brands fa-css" aria-hidden="true"></i><b>CSS</b></p>
+            <p>5 years experience</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+        <b>Daily Facts</b>
+        <ul>
+            <li>Developed a SPA AI driven that gives daily facts about the topics that the user likes, using Angular for the UI and Spring Boot with PostgreSQL for the backend.</li>
+        </ul>
+    </div>
+    <div class="project-item">
+        <b>Task & Habit Tracker</b>
+        <ul>
+            <li>Built a full-stack productivity application that helps users create, track, and analyze daily tasks and long-term habits, using Angular for the UI and Spring Boot with PostgreSQL for the backend.</li>
+        </ul>
+    </div>
+    <div class="project-item">
+        <b>Real-Time Expense Monitor</b>
+        <ul>
+            <li>Developed a financial web application that categorizes expenses in real time using AI-powered transaction analysis, with a Node.js microservice architecture and a responsive Angular dashboard.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="recommend">
+    <h2>Recommendations</h2>
+
+    <div class="recommend-container">
+        <div class="recommend-box">
+            “ João quickly understands complex ideas and delivers clean, effective solutions. A reliable and talented developer. ”
+        </div>
+
+        <div class="recommend-box">
+            “ Working with João is always a great experience — he's skilled, proactive, and brings a positive energy to the team. ”
+        </div>
+
+        <div class="recommend-box">
+            “ João consistently delivers high-quality work and adapts fast to new challenges. A strong asset in any project. ”
+        </div>
+    </div>
+
+    <div class="recommend-form">
+        <h3>Leave a Recommendation</h3>
+
+        <input type="text" id="name" placeholder="Name (Optional)">
+        <textarea id="message" rows="5" placeholder="Message"></textarea>
+        <button onclick="submitRecommendation()">Submit</button>
+    </div>
+</section>
+
+<div id="topBtn" onclick="scrollToTop()">↑</div>
+</body>
+</html>
